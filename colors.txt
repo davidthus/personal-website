@@ -1,0 +1,14 @@
+black  
+#131112
+-
+second black
+#3B3538
+-
+green 
+#49F704
+-
+white
+#F0F0F0
+- 
+red
+#DA1C07
