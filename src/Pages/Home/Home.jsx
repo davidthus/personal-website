@@ -9,7 +9,7 @@ function Home() {
       <Intro>
         A person who has many aspirations and likes to build more complex
         projects as time goes on. Check out the rest of the website to find out
-        more...
+        more and see some projects...
       </Intro>
     </CenterSection>
   );

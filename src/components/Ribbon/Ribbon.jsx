@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { ReactComponent as DiscordIcon } from "../../assets/discord.svg";
-import { ReactComponent as GithubIcon } from "../../assets/github.svg";
-import { ReactComponent as TwitterIcon } from "../../assets/twitter.svg";
+import { ReactComponent as DiscordIcon } from "../../assets/icondiscord.svg";
+import { ReactComponent as GithubIcon } from "../../assets/icongithub.svg";
+import { ReactComponent as TwitterIcon } from "../../assets/icontwitter.svg";
 import {
   DiscordWrapper,
   IconsWrapper,
@@ -10,6 +10,7 @@ import {
   SocialsWrapper,
   TipsWrapper,
   Tooltip,
+  TooltipWrapper,
 } from "./Ribbon.style";
 
 function Ribbon() {
@@ -24,12 +25,12 @@ function Ribbon() {
         <a href="https://twitter.com/dvdthus" target="_blank">
           <TwitterIcon />
         </a>
-        <DiscordWrapper>
-          <div onClick={() => setTooltipOpen((prev) => !prev)}>
+        <TooltipWrapper>
+          <DiscordWrapper onClick={() => setTooltipOpen((prev) => !prev)}>
             <DiscordIcon />
-          </div>
+          </DiscordWrapper>
           {tooltipOpen && <Tooltip>QUIXOTE#6325</Tooltip>}
-        </DiscordWrapper>
+        </TooltipWrapper>
       </IconsWrapper>
       <TipsWrapper>
         <LeftTip />

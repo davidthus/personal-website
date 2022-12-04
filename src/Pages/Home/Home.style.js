@@ -5,6 +5,7 @@ export const CenterSection = styled.article`
   flex-direction: column;
   align-items: center;
   flex: 1;
+  padding-right: calc(92px + 1rem);
 `;
 
 export const SmallText = styled.h2`

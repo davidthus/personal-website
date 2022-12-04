@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
-export const SocialsWrapper = styled.div`
+export const SocialsWrapper = styled.aside`
   position: absolute;
   top: 0;
-  left: 2rem;
+  left: clamp(1.2rem, 3vw, 2rem);
   display: flex;
   flex-direction: column;
 `;
 
-export const IconsWrapper = styled.menu`
+export const IconsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: clamp(1rem, 3vw, 2rem);
   gap: 1rem;
   background-color: #3b3538;
 `;
@@ -21,8 +21,13 @@ export const TipsWrapper = styled.div`
   width: 100%;
 `;
 
-export const DiscordWrapper = styled.div`
+export const TooltipWrapper = styled.div`
   position: relative;
+`;
+
+export const DiscordWrapper = styled.button`
+  border: none;
+  background: transparent;
   cursor: pointer;
 `;
 

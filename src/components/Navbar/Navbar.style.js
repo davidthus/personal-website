@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 export const NavbarWrapper = styled.nav`
+  position: fixed;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
