@@ -31,4 +31,8 @@ export const Logo = styled.aside`
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #3b3538;
   text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;

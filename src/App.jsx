@@ -1,38 +1,27 @@
-import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
-import {
-  Container,
-  IconsWrapper,
-  LeftTip,
-  RightTip,
-  SocialsWrapper,
-  TipsWrapper,
-} from "./App.style";
-import { ReactComponent as GithubIcon } from "./assets/github.svg";
-import { ReactComponent as TwitterIcon } from "./assets/twitter.svg";
+import React, { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+import { Container } from "./App.style";
+import Navbar from "./components/Navbar/Navbar";
+import Ribbon from "./components/Ribbon/Ribbon";
 import Home from "./Pages/Home/Home";
-import Navbar from "./Pages/Navbar/Navbar";
+const About = lazy(() => import("./Pages/About/About"));
+const Projects = lazy(() => import("./Pages/Projects/Projects"));
 
 function App() {
   return (
     <Container>
-      <SocialsWrapper>
-        <IconsWrapper>
-          <a href="https://github.com/davidthus" target="_blank">
-            <GithubIcon />
-          </a>
-          <a href="https://twitter.com/dvdthus" target="_blank">
-            <TwitterIcon />
-          </a>
-        </IconsWrapper>
-        <TipsWrapper>
-          <LeftTip />
-          <RightTip />
-        </TipsWrapper>
-      </SocialsWrapper>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <Ribbon />
+      <Suspense
+        fallback={
+          <div style={{ fontFamily: '"Courier Prime", monospace' }}></div>
+        }
+      >
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </Suspense>
       <Navbar />
     </Container>
   );
