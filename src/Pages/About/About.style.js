@@ -53,6 +53,7 @@ export const ArticleDesc = styled.p`
   font-family: "Courier Prime", monospace;
   color: #f0f0f0;
   max-width: 735px;
+  text-align: center;
 `;
 
 export const ColumnsWrapper = styled.ul`
