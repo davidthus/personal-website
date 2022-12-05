@@ -28,7 +28,7 @@ export const PageHeading = styled.h1`
 export const TextContainer = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
 `;
 
@@ -51,12 +51,13 @@ export const ArticleDesc = styled.p`
   font-weight: 400;
   font-family: "Courier Prime", monospace;
   color: #f0f0f0;
+  max-width: 735px;
 `;
 
 export const ColumnsWrapper = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  max-width: 900px;
+  max-width: 735px;
   width: 100%;
   justify-content: space-between;
   gap: 1.5rem;
