@@ -37,6 +37,7 @@ export const ArticleWrapper = styled.article`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
 `;
 
 export const ArticleHeading = styled.h2`
