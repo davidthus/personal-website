@@ -6,20 +6,18 @@ import Ribbon from "./components/Ribbon/Ribbon";
 import Home from "./Pages/Home/Home";
 const About = lazy(() => import("./Pages/About/About"));
 const Projects = lazy(() => import("./Pages/Projects/Projects"));
+const Project = lazy(() => import("./Pages/Project/Project"));
 
 function App() {
   return (
     <Container>
       <Ribbon />
-      <Suspense
-        fallback={
-          <div style={{ fontFamily: '"Courier Prime", monospace' }}></div>
-        }
-      >
+      <Suspense fallback={<div />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:name" element={<Project />} />
         </Routes>
       </Suspense>
       <Navbar />

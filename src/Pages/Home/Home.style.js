@@ -6,6 +6,7 @@ export const CenterSection = styled.article`
   align-items: center;
   flex: 1;
   padding-right: calc(92px + 1rem);
+  padding-left: calc(92px + clamp(1.2rem, 3vw, 2rem) + 1rem);
 `;
 
 export const Underline = styled.b`

@@ -4,7 +4,7 @@ export const PageContainer = styled.main`
   flex-direction: column;
   align-items: center;
   padding-left: calc(92px + 4rem);
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-right: calc(4rem + 92px);
   padding-bottom: 2rem;
   min-height: 100vh;
@@ -23,6 +23,7 @@ export const PageHeading = styled.h1`
   font-family: "Courier Prime", monospace;
   color: #f0f0f0;
   text-align: center;
+  margin-bottom: 1rem;
 `;
 
 export const TextContainer = styled.section`

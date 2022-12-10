@@ -17,7 +17,7 @@ function About() {
   const skillsList = [
     {
       title: "Languages",
-      list: ["Javascript", "Typescript", "CSS", "HTML"],
+      list: ["Javascript", "Typescript", "CSS", "HTML", "SCSS"],
     },
     {
       title: "Frameworks/Libs",
