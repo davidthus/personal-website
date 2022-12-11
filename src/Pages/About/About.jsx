@@ -52,15 +52,16 @@ function About() {
           <ArticleDesc>
             Once upon a time, a boy logged into Khan Academy and started
             learning drawing and animation in Javascript. He enjoyed creating
-            shapes and animating, though he stopped for some reason. Then, after
-            some time (couple years) he got back into coding and started
-            learning HTML and some css on Codecademy. It was on and off for a
-            period until April 2021 he started a frontend engineer course. He
-            learned about JS, Git, Github and how to combine all of the skills
-            together. He also learnt about the backend, things such as: CRUD,
-            REST APIs, express and SQL. In 2022, he applied his knowledge to
-            various projects using React. Now, he is looking to work as a
-            front-end web developer.
+            shapes and animating, though he stopped for some reason. <br />
+            <br />
+            Then, after some time (couple years) he got back into coding and
+            started learning HTML and some css on Codecademy. It was on and off
+            for a period until April 2021 he started a frontend engineer course.
+            He learned about JS, Git, Github and how to combine all of the
+            skills together. He also learnt about the backend, things such as:
+            CRUD, REST APIs, express and SQL. <br />
+            <br /> In 2022, he applied his knowledge to various projects using
+            React. Now, he is looking to work as a front-end web developer.
           </ArticleDesc>
         </ArticleWrapper>
         <ArticleWrapper>

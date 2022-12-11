@@ -9,16 +9,6 @@ export const CenterSection = styled.article`
   padding-left: calc(92px + clamp(1.2rem, 3vw, 2rem) + 1rem);
 `;
 
-export const Underline = styled.b`
-  text-decoration: underline;
-  text-decoration-color: #49f704;
-  font-family: "Courier Prime", monospace;
-  color: #f0f0f0;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  font-weight: 400;
-`;
-
 export const SmallText = styled.h2`
   font-family: "Courier Prime", monospace;
   color: #f0f0f0;
