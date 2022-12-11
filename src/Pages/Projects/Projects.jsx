@@ -85,7 +85,7 @@ function Projects() {
             <ProjectDesc>{project.description}</ProjectDesc>
             <TechList>
               {project.tools.map((tool, i) => (
-                <Technology>{tool}</Technology>
+                <Technology key={i}>{tool}</Technology>
               ))}
             </TechList>
           </ProjectCardWrapper>
