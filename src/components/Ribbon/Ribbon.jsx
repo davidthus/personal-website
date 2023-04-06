@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import { ReactComponent as DiscordIcon } from "../../assets/icondiscord.svg";
 import { ReactComponent as GithubIcon } from "../../assets/icongithub.svg";
+import { ReactComponent as GmailIcon } from "../../assets/icongmail.svg";
 import { ReactComponent as TwitterIcon } from "../../assets/icontwitter.svg";
 import {
-  DiscordWrapper,
   IconsWrapper,
   LeftTip,
   RightTip,
   SocialsWrapper,
   TipsWrapper,
   Tooltip,
+  TooltipIconWrapper,
   TooltipWrapper,
 } from "./Ribbon.style";
 
 function Ribbon() {
-  const [tooltipOpen, setTooltipOpen] = useState(false);
+  const [discordTooltipOpen, setDiscordTooltipOpen] = useState(false);
+  const [gmailTooltipOpen, setGmailTooltipOpen] = useState(false);
 
   return (
     <SocialsWrapper>
@@ -26,10 +28,20 @@ function Ribbon() {
           <TwitterIcon />
         </a>
         <TooltipWrapper>
-          <DiscordWrapper onClick={() => setTooltipOpen((prev) => !prev)}>
+          <TooltipIconWrapper
+            onClick={() => setDiscordTooltipOpen((prev) => !prev)}
+          >
             <DiscordIcon />
-          </DiscordWrapper>
-          {tooltipOpen && <Tooltip>QUIXOTE#6325</Tooltip>}
+          </TooltipIconWrapper>
+          {discordTooltipOpen && <Tooltip>QUIXOTE#6325</Tooltip>}
+        </TooltipWrapper>
+        <TooltipWrapper>
+          <TooltipIconWrapper
+            onClick={() => setGmailTooltipOpen((prev) => !prev)}
+          >
+            <GmailIcon />
+          </TooltipIconWrapper>
+          {gmailTooltipOpen && <Tooltip>nickelrichie05@gmail.com</Tooltip>}
         </TooltipWrapper>
       </IconsWrapper>
       <TipsWrapper>

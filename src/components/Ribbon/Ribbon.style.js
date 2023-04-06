@@ -25,7 +25,7 @@ export const TooltipWrapper = styled.div`
   position: relative;
 `;
 
-export const DiscordWrapper = styled.button`
+export const TooltipIconWrapper = styled.button`
   border: none;
   background: transparent;
   cursor: pointer;
