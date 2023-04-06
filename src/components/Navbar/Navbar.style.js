@@ -16,6 +16,23 @@ export const NavbarWrapper = styled.nav`
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
+  transition: 0.2s;
+
+  @media (max-width: 845px) {
+    background: #131112;
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+    gap: 2rem;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+  }
 `;
 
 export const Svg = styled.svg`
@@ -41,4 +58,16 @@ export const Logo = styled.aside`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  @media (max-width: 845px) {
+    padding-bottom: 0;
+    border-right: 2px solid #3b3538;
+    border-bottom: 0;
+    width: auto;
+    padding-right: 2rem;
+  }
+
+  @media (max-width: 370px) {
+    display: none;
+  }
 `;
