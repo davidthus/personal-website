@@ -35,6 +35,7 @@ export const Tooltip = styled.div`
   position: absolute;
   top: 5.7px;
   left: 3.5rem;
+  width: max-content;
   background-color: #131112;
   border: 1.5px solid #49f704;
   padding: 0.3rem 0.3rem 0.1rem 0.3rem;

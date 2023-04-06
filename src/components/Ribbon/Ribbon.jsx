@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import { ReactComponent as DiscordIcon } from "../../assets/icondiscord.svg";
 import { ReactComponent as GithubIcon } from "../../assets/icongithub.svg";
 import { ReactComponent as GmailIcon } from "../../assets/icongmail.svg";
@@ -27,21 +28,35 @@ function Ribbon() {
         <a href="https://twitter.com/dvdthus" target="_blank">
           <TwitterIcon />
         </a>
+
         <TooltipWrapper>
-          <TooltipIconWrapper
-            onClick={() => setDiscordTooltipOpen((prev) => !prev)}
+          <CopyToClipboard
+            text={"QUIXOTE#6325"}
+            onCopy={() => {
+              setDiscordTooltipOpen((prev) => !prev);
+              setGmailTooltipOpen(false);
+            }}
           >
-            <DiscordIcon />
-          </TooltipIconWrapper>
-          {discordTooltipOpen && <Tooltip>QUIXOTE#6325</Tooltip>}
+            <TooltipIconWrapper>
+              <DiscordIcon />
+            </TooltipIconWrapper>
+          </CopyToClipboard>
+          {discordTooltipOpen && <Tooltip>Copied discord tag!</Tooltip>}
         </TooltipWrapper>
+
         <TooltipWrapper>
-          <TooltipIconWrapper
-            onClick={() => setGmailTooltipOpen((prev) => !prev)}
+          <CopyToClipboard
+            text={"nickelrichie05@gmail.com"}
+            onCopy={() => {
+              setGmailTooltipOpen((prev) => !prev);
+              setDiscordTooltipOpen(false);
+            }}
           >
-            <GmailIcon />
-          </TooltipIconWrapper>
-          {gmailTooltipOpen && <Tooltip>nickelrichie05@gmail.com</Tooltip>}
+            <TooltipIconWrapper>
+              <GmailIcon />
+            </TooltipIconWrapper>
+          </CopyToClipboard>
+          {gmailTooltipOpen && <Tooltip>Copied gmail!</Tooltip>}
         </TooltipWrapper>
       </IconsWrapper>
       <TipsWrapper>
